@@ -154,19 +154,21 @@ header ul{
 }
 
 .grid-informacion{
-    width: 800px;
-    
     display: grid;
-    margin: auto;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(8, auto);
 
     grid-template-areas:
-    "lema   lema"
-    "somos  ."
-    ".  objetivos"
-    "personaliza    ."
-    ".  localizacion"
+    "lema   .   .   ."
+    "img-apoyo-1    somos   img-apoyo-2  ."
+    "img-apoyo-3    .   .   ."
+    "img-apoyo-4  img-apoyo-5   objetivos   ."
+    "personaliza    .   img-apoyo-6 ."
+    "img-apoyo-7    .   .   ."
+    "img-apoyo-8    .   .   ."
+    "mapa .  localizacion   ."
     ;
 }
 
@@ -174,6 +176,7 @@ header ul{
     height: 60px;
     padding: 10px;
     grid-area: lema;
+    grid-column: span 4;
 
     text-align: center;
     font-size: 30px;
@@ -181,37 +184,48 @@ header ul{
 }
 
 .somos {
-    width: 400px;
+    width: 335px;
     height: 150px;
+    
     grid-area: somos;
-
+    
+    align-self: center;
+    margin: 30px 0px 30px 60px;
     overflow: hidden;
 }
 
 .objetivos {
-    width: 400px;
-    height: 150px;
+    width: 370px;
+    height: 180px;
+
     grid-area: objetivos;
 
+    align-self: flex-start;
+    margin: 20px;
+    padding: 0px 30px;
     overflow: hidden;
-    text-align: right;
 }
 
 .personaliza {
     width: 400px;
-    height: 150px;
+    height: 220px;
     grid-area: personaliza;
+    grid-column: span 2;
 
+    align-self: center;
+    justify-self: center;
+    margin: 30px 30px 30px 175px;
     overflow: hidden;
 }
 
 .localizacion {
-    width: 400px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     grid-area: localizacion;
 
+    align-self: flex-start;
+    margin: 70px 30px 30px;
     overflow: hidden;
-    text-align: right;
 }
 
 .titulos {
@@ -221,10 +235,115 @@ header ul{
 
 /* ------ Imagenes de apoyo ------ */
 
-.imagenes-de-apoyo{
-    display: flex;
-    width: 300px;
+#img-apoyo-1{
+    width: 250px;
     height: 300px;
+    background-color: aquamarine;
+
+    justify-self: end;
+    align-self: center;
+
+    grid-area: img-apoyo-1;
+}
+
+#img-apoyo-2{
+    width: 250px;
+    height: 200px;
+    background-color: green;
+
+    justify-self: center;
+    align-self: center;
+
+    margin: 10px;
+    grid-area: img-apoyo-2;
+    grid-column: span 2;
+}
+
+#img-apoyo-3{
+    width: 500px;
+    height: 50px;
+    background-color: saddlebrown;
+
+    justify-self: start;
+    align-self: center;
+
+    margin: 0px 110px 50px;
+    grid-area: img-apoyo-3;
+    grid-column: span 2/4;
+}
+
+#img-apoyo-4{
+    width: 150px;
+    height: 200px;
+    background-color: lightcoral;
+
+    justify-self: center;
+    align-self: center;
+
+    margin: 40px 10px 0px 10px;
+    grid-area: img-apoyo-4;
+}
+
+#img-apoyo-5{
+    width: 405px;
+    height: 200px;
+    background-color: violet;
+
+    justify-self: start;
+    align-self: flex-start;
+
+    grid-area: img-apoyo-5;
+}
+
+#img-apoyo-6{
+    width: 410px;
+    height: 300px;
+    background-color: darkcyan;
+
+    justify-self: center;
+    align-self: center;
+
+    grid-area: img-apoyo-6;
+    grid-column: span 2;
+}
+
+#img-apoyo-7{
+    width: 450px;
+    height: 30px;
+    background-color: olive;
+
+    justify-self: start;
+    align-self: center;
+
+    margin: 0px 10px 0px 56px;
+    grid-area: img-apoyo-7;
+    grid-column: span 4;
+}
+
+#img-apoyo-8{
+    width: 450px;
+    height: 30px;
+    background-color: rgb(158, 1, 14);
+
+    justify-self: center;
+    align-self: center;
+    
+    margin: 10px 0px 50px;
+    grid-area: img-apoyo-8;
+    grid-column: span 4;
+}
+
+#mapa{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(16, 21, 63);
+
+    justify-self: end;
+    align-self: center;
+
+    margin: 0px 30px 80px 0px;
+    grid-area: mapa;
+    grid-column: span 2;
 }
 
 /*___________Footer___________ */
