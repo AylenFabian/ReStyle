@@ -575,7 +575,7 @@ footer {
         /* "ofertasdecuentos" */
     ;
 
-    margin-top: 6.25rem;
+    margin-top: 7.625rem;
 }
 
 /* ------ Barra de novedades ------ */
@@ -981,14 +981,16 @@ footer {
 /* ------ Barra de navegación filtros ------ */
 
 .filtros {
+    height: auto;
     display: flex;
+    position: static;
     background-color: #5b5dbe;
     color: #fafafc;
 
     justify-content: center;
     align-items: center;
 
-    padding: 20px;
+    padding: 10px 20px;
     gap: 20px;
 
     font-size: 17px;
@@ -1000,6 +1002,10 @@ footer {
     background-color: #d8e73a;
     color: #5b5dbe;
 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-start-start-radius: 30px;
+    border-start-end-radius: 30px;
     padding: 5px 10px;
     font-weight: 600;
     font-size: 16px;

@@ -5,270 +5,291 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5777fbe786.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="../css/style.css">
     <title>Información</title>
 </head>
 
 <body>
 
-    <!-- Barra de navegación -->
+    <section class="grilla-index">
 
-    <header>
-        <img src="../img/ReStyle letras.png" alt="">
+        <!-- Barra de navegación -->
 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./perfil-favoritos-carrito.html">Favoritos</a></li>
-                <li><a href="./perfil-favoritos-carrito.html">Carrito</a></li>
-                <li><a href="./perfil-favoritos-carrito.html">Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fa-solid fa-bars-staggered" id="btn"></i>
+                    <i class="fa-solid fa-xmark" id="cancel"></i>
+                </label>
 
-    <main>
-        <section class="fondo-de-pcf">
+                <img src="../img/ReStyle letras.png" alt="">
 
-            <!-- Perfil -->
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Carrito</a></li>
+                    <li><a href="#">Perfil</a></li>
+                </ul>
+            </nav>
+        </header>
 
-            <div class="grilla-perfil">
-                
-                <!-- Título -->
+        <main>
+            <section class="fondo-de-pcf">
 
-                <div class="titulo-perfil">
-                    <h2>Perfil</h2>
-                </div>
+                <!-- Perfil -->
 
-                <!-- Botones de inicio y registro -->
+                <div class="grilla-perfil">
 
-                <div class="botones-inicio-registro">
-                    <button>Iniciar Sesión</button>
-                    <button>Registrarse</button>
-                </div>
+                    <!-- Título -->
 
-                <!-- Usuario -->
-                <div class="usuario">
-                    <img id="shakira" src="../img/shakira.jpg" alt="">
-                    <div id="datos">
-                        <h3>Nombre y apellido</h3>
-                        <span>Genero:______</span>
-                        <span>Tel:_________</span>
-                        <span>E-mail:______</span>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                    </div>
-                </div>
-
-                <!-- Tarjeta -->
-                
-                <div class="tarjeta">
-                    <img id="tarjeta" src="../img/tarjeta.png" alt="">
-                    <div>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Carrito -->
-
-            <div class="grilla-carrito">
-
-                <!-- Título -->
-
-                <div class="titulo-carrito">
-                    <h2>Carrito</h2>
-                </div>
-
-                <!-- Imagen principal -->
-
-                <div class="img-principal">
-                    <img src="../img/qq17.jpg" alt="">
-                </div>
-
-                <!-- Grilla de información de producto -->
-
-                <div class="grilla-info-producto">
-                    <div class="informacion-de-producto">
-                        <h3>Nombre de producto</h3>
-                        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ea, accusamus ex
-                            recusandae
-                            aut aperiam excepturi mollitia quo. Eaque eos odio fugit ex consequatur inventore
-                            asperiores
-                            placeat molestiae eveniet autem.
-                        </span>
+                    <div class="titulo-perfil">
+                        <h2>Perfil</h2>
                     </div>
 
-                    <!-- Talles -->
+                    <!-- Botones de inicio y registro -->
 
-                    <div class="talles">
-                        <p>Talles</p>
-                        <span>XS</span>
-                        <input type="radio" name="talles">
-                        <span>S</span>
-                        <input type="radio" name="talles">
-                        <span>M</span>
-                        <input type="radio" name="talles">
-                        <span>L</span>
-                        <input type="radio" name="talles">
-                        <span>XL</span>
-                        <input type="radio" name="talles">
-                        <span>XX</span>
-                        <input type="radio" name="talles">
+                    <div class="botones-inicio-registro">
+                        <button>Iniciar Sesión</button>
+                        <button>Registrarse</button>
                     </div>
 
-                    <!-- Colores -->
-
-                    <div class="colores">
-                        <p>Colores</p>
-                        <span id="rojo">rojo</span>
-                        <span id="gris">gris</span>
-                        <span id="celeste">celeste</span>
-                        <span id="amarillo">amarillo</span>
-                    </div>
-
-                    <!-- Precio -->
-
-                    <div class="precio">
-                        <h4>$---</h4>
-                    </div>
-
-                    <!-- Boton comprar -->
-
-                    <div class="comprar">
-                        <button>Comprar</button>
-                    </div>
-                </div>
-
-                <!-- Mas compras -->
-
-                <div class="mas-compras">
-                    <img src="../img/qq3.jpg" alt="">
-                    <div>
-                        <h4>Nombre de producto</h4>
-                        <span>$---</span>
-                        <br>
-                        <a href="./perfil-favoritos-carrito.html">Comprar</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Favoritos -->
-
-            <div class="grilla-favoritos">
-
-                <!-- Título -->
-                
-                <div class="titulo-favoritos">
-                    <h2>Favoritos</h2>
-                </div>
-
-                <!-- Grilla de favoritos -->
-
-                <section class="galeria-favoritos">
-                    <article>
-                        <img src="../img/qq19.jpg" alt="">
-                        <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                    <!-- Usuario -->
+                    <div class="usuario">
+                        <img id="shakira" src="../img/shakira.jpg" alt="">
+                        <div id="datos">
+                            <h3>Nombre y apellido</h3>
+                            <span>Genero:______</span>
+                            <span>Tel:_________</span>
+                            <span>E-mail:______</span>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                         </div>
-                    </article>
+                    </div>
 
-                    <article>
-                        <img src="../img/qq20.jpg" alt="">
-                        <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
-                        </div>
-                    </article>
+                    <!-- Tarjeta -->
 
-                    <article>
-                        <img src="../img/qq21.jpg" alt="">
+                    <div class="tarjeta">
+                        <img id="tarjeta" src="../img/tarjeta.png" alt="">
                         <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                         </div>
-                    </article>
-                    <article>
-                        <img src="../img/qq22.jpg" alt="">
-                        <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
-                        </div>
-                    </article>
+                    </div>
+                </div>
 
-                    <article>
-                        <img src="../img/qq23.jpg" alt="">
-                        <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
-                        </div>
-                    </article>
+                <!-- Carrito -->
 
-                    <article>
+                <div class="grilla-carrito">
+
+                    <!-- Título -->
+
+                    <div class="titulo-carrito">
+                        <h2>Carrito</h2>
+                    </div>
+
+                    <!-- Imagen principal -->
+
+                    <div class="img-principal">
                         <img src="../img/qq17.jpg" alt="">
+                    </div>
+
+                    <!-- Grilla de información de producto -->
+
+                    <div class="grilla-info-producto">
+                        <div class="informacion-de-producto">
+                            <h3>Nombre de producto</h3>
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ea, accusamus ex
+                                recusandae
+                                aut aperiam excepturi mollitia quo. Eaque eos odio fugit ex consequatur inventore
+                                asperiores
+                                placeat molestiae eveniet autem.
+                            </span>
+                        </div>
+
+                        <!-- Talles -->
+
+                        <div class="talles">
+                            <p>Talles</p>
+                            <span>XS</span>
+                            <input type="radio" name="talles">
+                            <span>S</span>
+                            <input type="radio" name="talles">
+                            <span>M</span>
+                            <input type="radio" name="talles">
+                            <span>L</span>
+                            <input type="radio" name="talles">
+                            <span>XL</span>
+                            <input type="radio" name="talles">
+                            <span>XX</span>
+                            <input type="radio" name="talles">
+                        </div>
+
+                        <!-- Colores -->
+
+                        <div class="colores">
+                            <p>Colores</p>
+                            <span id="rojo">rojo</span>
+                            <span id="gris">gris</span>
+                            <span id="celeste">celeste</span>
+                            <span id="amarillo">amarillo</span>
+                        </div>
+
+                        <!-- Precio -->
+
+                        <div class="precio">
+                            <h4>$---</h4>
+                        </div>
+
+                        <!-- Boton comprar -->
+
+                        <div class="comprar">
+                            <button>Comprar</button>
+                        </div>
+                    </div>
+
+                    <!-- Mas compras -->
+
+                    <div class="mas-compras">
+                        <img src="../img/qq3.jpg" alt="">
                         <div>
                             <h4>Nombre de producto</h4>
                             <span>$---</span>
                             <br>
                             <a href="./perfil-favoritos-carrito.html">Comprar</a>
                         </div>
-                    </article>
-                    <article>
-                        <img src="../img/qq16.jpg" alt="">
-                        <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
-                        </div>
-                    </article>
+                    </div>
+                </div>
 
-                    <article>
-                        <img src="../img/qq7.jpg" alt="">
-                        <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
-                        </div>
-                    </article>
+                <!-- Favoritos -->
 
-                    <article>
-                        <img src="../img/qq2.jpg" alt="">
-                        <div>
-                            <h4>Nombre de producto</h4>
-                            <span>$---</span>
-                            <br>
-                            <a href="./perfil-favoritos-carrito.html">Comprar</a>
-                        </div>
-                    </article>
-                </section>
-            </div>
-        </section>
-    </main>
+                <div class="grilla-favoritos">
 
-    <!-- Pie de página -->
+                    <!-- Título -->
 
-    <footer>
-        <section class="pie-de-pagina">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <p>Dirección, teléfono, e-mail</p>
-            <div>
-                <a href="facebook">Facebook</a>
-                <a href="instagram">Instagram</a>
-                <a href="YouTube">Youtube</a>
-            </div>
-        </section>
-    </footer>
+                    <div class="titulo-favoritos">
+                        <h2>Favoritos</h2>
+                    </div>
+
+                    <!-- Grilla de favoritos -->
+
+                    <section class="galeria-favoritos">
+                        <article>
+                            <img src="../img/qq19.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="../img/qq20.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="../img/qq21.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="../img/qq22.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="../img/qq23.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="../img/qq17.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="../img/qq16.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="../img/qq7.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="../img/qq2.jpg" alt="">
+                            <div>
+                                <h4>Nombre de producto</h4>
+                                <span>$---</span>
+                                <br>
+                                <a href="./perfil-favoritos-carrito.html">Comprar</a>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pie de página -->
+
+        <footer>
+            <section class="pie-de-pagina">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Dirección, teléfono, e-mail</p>
+                <div>
+                    <a href="facebook">Facebook</a>
+                    <a href="instagram">Instagram</a>
+                    <a href="YouTube">Youtube</a>
+                </div>
+            </section>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000
+                , once: true
+            });
+        </script>
+
+    </section>
 
 </body>
 
