@@ -5,143 +5,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5777fbe786.js" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2? family=Berkshire+Swash&family=PT+Sans+Caption&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <title>ReStyle</title>
 </head>
 
 <body>
 
-    <!-- Barra de navegación -->
+    <section class="grilla-index">
+        <!-- Barra de navegación -->
 
-    <header>
-        <img src="./img/ReStyle letras.png" alt="">
+        <header>
+            
 
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/perfil-favoritos-carrito.html">Favoritos</a></li>
-                <li><a href="./pages/perfil-favoritos-carrito.html">Carrito</a></li>
-                <li><a href="./pages/perfil-favoritos-carrito.html">Perfil</a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fa-solid fa-bars-staggered" id="btn"></i>
+                    <i class="fa-solid fa-xmark" id="cancel"></i>
+                </label>
 
-    <!-- Portada de inicio -->
+                <img src="./img/ReStyle letras.png" alt="">
 
-    <main>
-        <section class="grid-inicio">
-            <div class="inicio-populares">
-                <button><a href="./pages/populares.html">POPULARES</a></button>
-            </div>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="./pages/perfil-favoritos-carrito.html">Favoritos</a></li>
+                    <li><a href="./pages/perfil-favoritos-carrito.html">Carrito</a></li>
+                    <li><a href="./pages/perfil-favoritos-carrito.html">Perfil</a></li>
+                </ul>
 
-            <div class="inicio-novedades">
-                <button><a href="./pages/novedades.html">NOVEDADES</a></button>
-            </div>
 
-            <div class="inicio-categorias">
-                <button><a href="./pages/categorias.html">CATEGORÍAS</a></button>
-            </div>
-        </section>
+            </nav>
+        </header>
 
-        <!-- Información -->
+        <!-- Portada de inicio -->
 
-        <section id="informacion">
-            <div class="grid-informacion">
-
-                <!-- Lema -->
-
-                <spam class="lema">
-                    <p>Recicla, Reduce, Reusa y ReStyle</p>
-                </spam>
-
-                <!-- Acerca del emprendimiento -->
-
-                <div class="somos"data-aos="fade-up">
-                    <h2 class="titulos">¿Quienes somos?</h2>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae
-                        voluptate
-                        ipsum,
-                        ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
-                        libero!
-                    </p>
+        <main>
+            <section class="grilla-inicio">
+                <div class="inicio-populares">
+                    <button><a href="./pages/populares.html">POPULARES</a></button>
                 </div>
 
-                <div class="objetivos" data-aos="fade-up">
-                    <h2 class="titulos">Nuestros objetivos</h2>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae voluptate
-                        ipsum,
-                        ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
-                        libero!
-                    </p>
+                <div class="inicio-novedades">
+                    <button><a href="./pages/novedades.html">NOVEDADES</a></button>
                 </div>
 
-                <div class="personaliza" data-aos="fade-up">
-                    <h2 class="titulos">¡Personaliza tus prendas!</h2>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae voluptate
-                        ipsum,
-                        ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
-                        libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae voluptate
-                        ipsum,
-                        ab soluta fugiat.
-                    </p>
+                <div class="inicio-categorias">
+                    <button><a href="./pages/categorias.html">CATEGORÍAS</a></button>
                 </div>
+            </section>
 
-                <div class="localizacion" data-aos="fade-up">
-                    <h2 class="titulos">Localización</h2>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae voluptate
-                        ipsum,
-                        ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
-                        libero!
-                    </p>
+            <!-- Información -->
+
+
+            <section id="informacion">
+                <div class="grilla-informacion">
+
+                    <!-- Lema -->
+
+                    <spam class="lema">
+                        <p>Recicla, Reduce, Reusa y ReStyle</p>
+                    </spam>
+
+                    <!-- Acerca del emprendimiento -->
+
+                    <div class="somos" data-aos="fade-up">
+                        <h2 class="titulos">¿Quienes somos?</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae
+                            voluptate
+                            ipsum,
+                            ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
+                            libero!ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur
+                            consequatur, nisi
+                            libero!
+                        </p>
+                    </div>
+
+                    <div class="objetivos" data-aos="fade-up">
+                        <h2 class="titulos">Nuestros objetivos</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae
+                            voluptate
+                            ipsum,
+                            ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
+                            libero!
+                        </p>
+                    </div>
+
+                    <div class="personaliza" data-aos="fade-up">
+                        <h2 class="titulos">¡Personaliza tus prendas!</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae
+                            voluptate
+                            ipsum,
+                            ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
+                            libero! Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni
+                            vitae voluptate
+                            ipsum,
+                            ab soluta fugiat.
+                        </p>
+                    </div>
+
+                    <div class="localizacion" data-aos="fade-up">
+                        <h2 class="titulos">Localización</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit voluptatem, magni vitae
+                            voluptate
+                            ipsum,
+                            ab soluta fugiat qui modi reiciendis. Dicta officia magni esse in pariatur consequatur, nisi
+                            libero!
+                        </p>
+                    </div>
+
+                    <!-- Imágenes de apoyo -->
+
+                    <div id="img-apoyo-1" data-aos="fade-up"></div>
+                    <div id="img-apoyo-2" data-aos="fade-up"></div>
+                    <div id="img-apoyo-3" data-aos="fade-up"></div>
+                    <div id="img-apoyo-4" data-aos="fade-up"></div>
+                    <div id="img-apoyo-5" data-aos="fade-up"></div>
+                    <div id="img-apoyo-6" data-aos="fade-up"></div>
+                    <div id="img-apoyo-7" data-aos="fade-up"></div>
+                    <div id="img-apoyo-8" data-aos="fade-up"></div>
+
+                    <iframe id="mapa" data-aos="fade-up"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201170.0251753719!2d-57.740618817302014!3d-38.01721305986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671840729328!5m2!1ses-419!2sar"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></map>
                 </div>
+            </section>
+        </main>
 
-                <!-- Imágenes de apoyo -->
+        <!-- Pie de página -->
+        <footer>
 
-                <div id="img-apoyo-1" data-aos="fade-up"></div>
-                <div id="img-apoyo-2" data-aos="fade-up"></div>
-                <div id="img-apoyo-3" data-aos="fade-up"></div>
-                <div id="img-apoyo-4" data-aos="fade-up"></div>
-                <div id="img-apoyo-5" data-aos="fade-up"></div>
-                <div id="img-apoyo-6" data-aos="fade-up"></div>
-                <div id="img-apoyo-7" data-aos="fade-up"></div>
-                <div id="img-apoyo-8" data-aos="fade-up"></div>
-                
-                <iframe id="mapa" data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201170.0251753719!2d-57.740618817302014!3d-38.01721305986744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671840729328!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
+            <section class="pie-de-pagina">
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Dirección, teléfono, e-mail</p>
+                <div>
+                    <a href="facebook">Facebook</a>
+                    <a href="instagram">Instagram</a>
+                    <a href="YouTube">Youtube</a>
+                </div>
+            </section>
 
-            </div>
+        </footer>
 
-        </section>
-    </main>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000
+                , once: true
+            });
+        </script>
 
-    <!-- Pie de página -->
-    <footer>
+    </section>
 
-        <section class="pie-de-pagina">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-            <p>Dirección, teléfono, e-mail</p>
-            <div>
-                <a href="facebook">Facebook</a>
-                <a href="instagram">Instagram</a>
-                <a href="YouTube">Youtube</a>
-            </div>
-        </section>
-
-    </footer>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000
-            ,once: true
-        });
-    </script>
 </body>
 
 </html>
