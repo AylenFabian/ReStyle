@@ -83,7 +83,7 @@ nav ul li {
 }
 
 nav ul li a{
-    color: #130702;
+    color: #5b5dbe;
     position: relative;
 
     font-size: 18px;
@@ -92,7 +92,7 @@ nav ul li a{
 }
 
 nav a:hover {
-    color: #5b5dbe;
+    color: #d8e73a;
 }
 
 label #btn, #cancel {
@@ -529,7 +529,7 @@ footer {
         height: auto;
 
         left: 5%;
-        top: 20px;
+        top: 18px;
     }
 
     label #btn {
@@ -537,8 +537,13 @@ footer {
     }
 
     nav ul li a{
+        color: #130702;
         font-size: 15px;
         text-shadow: 0px 0px 15px #d8e73a;
+    }
+
+    nav ul li a:hover {
+        color: #5b5dbe;
     }
 
     ul {
